@@ -1,4 +1,4 @@
-// File: C:\Users\Devicebook\OneDrive\Desktop\final\nextJsFyesta\app\layout.js
+// File: D:\Fyesta\Fyestafinal\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

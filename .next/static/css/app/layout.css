@@ -536,9 +536,6 @@ video {
 .bottom-8 {
   bottom: 2rem;
 }
-.bottom-\[-80px\] {
-  bottom: -80px;
-}
 .left-0 {
   left: 0px;
 }
@@ -554,35 +551,17 @@ video {
 .z-10 {
   z-index: 10;
 }
-.mb-\[-20px\] {
-  margin-bottom: -20px;
-}
-.mr-1 {
-  margin-right: 0.25rem;
-}
 .mt-0 {
   margin-top: 0px;
 }
-.mt-2 {
-  margin-top: 0.5rem;
-}
-.mt-5 {
-  margin-top: 1.25rem;
-}
 .flex {
   display: flex;
-}
-.h-10 {
-  height: 2.5rem;
 }
 .h-14 {
   height: 3.5rem;
 }
 .h-44 {
   height: 11rem;
-}
-.h-64 {
-  height: 16rem;
 }
 .h-72 {
   height: 18rem;
@@ -605,23 +584,14 @@ video {
 .w-16 {
   width: 4rem;
 }
-.w-24 {
-  width: 6rem;
-}
 .w-36 {
   width: 9rem;
-}
-.w-40 {
-  width: 10rem;
-}
-.w-\[400px\] {
-  width: 400px;
 }
 .w-full {
   width: 100%;
 }
-.cursor-pointer {
-  cursor: pointer;
+.flex-row {
+  flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
@@ -632,14 +602,14 @@ video {
 .items-center {
   align-items: center;
 }
-.justify-end {
-  justify-content: flex-end;
-}
 .justify-center {
   justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .overflow-clip {
   overflow: clip;
@@ -647,53 +617,68 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
-.bg-\[\#df5e5e\] {
+.border-4 {
+  border-width: 4px;
+}
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(224 94 94 / var(--tw-border-opacity, 1));
+}
+.bg-background {
   --tw-bg-opacity: 1;
-  background-color: rgb(223 94 94 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 244 233 / var(--tw-bg-opacity, 1));
+}
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 94 94 / var(--tw-bg-opacity, 1));
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .p-4 {
   padding: 1rem;
 }
-.pl-3 {
-  padding-left: 0.75rem;
+.p-6 {
+  padding: 1.5rem;
 }
-.pr-3 {
-  padding-right: 0.75rem;
+.p-7 {
+  padding: 1.75rem;
 }
-.pt-6 {
-  padding-top: 1.5rem;
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
-.text-\[13px\] {
-  font-size: 13px;
+.pl-7 {
+  padding-left: 1.75rem;
 }
-.text-\[20px\] {
-  font-size: 20px;
+.pr-7 {
+  padding-right: 1.75rem;
 }
-.text-\[30px\] {
-  font-size: 30px;
+.pt-3 {
+  padding-top: 0.75rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
 }
-.font-semibold {
-  font-weight: 600;
+.font-bold {
+  font-weight: 700;
 }
-.text-\[\#8c8c8c\] {
+.text-navButton {
   --tw-text-opacity: 1;
-  color: rgb(140 140 140 / var(--tw-text-opacity, 1));
+  color: rgb(156 151 145 / var(--tw-text-opacity, 1));
 }
-.text-\[\#df5e5e\] {
+.text-primary {
   --tw-text-opacity: 1;
-  color: rgb(223 94 94 / var(--tw-text-opacity, 1));
-}
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(224 94 94 / var(--tw-text-opacity, 1));
 }
 .antialiased {
   -webkit-font-smoothing: antialiased;
@@ -1358,6 +1343,16 @@ textarea {
 }
 }
 
+.hover\:bg-primary:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 94 94 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 @media not all and (min-width: 768px) {
 
   .max-md\:hidden {
@@ -1392,36 +1387,12 @@ textarea {
   .md\:hidden {
     display: none;
   }
-
-  .md\:justify-around {
-    justify-content: space-around;
-  }
-
-  .md\:text-\[20px\] {
-    font-size: 20px;
-  }
-
-  .md\:text-\[35px\] {
-    font-size: 35px;
-  }
-
-  .md\:text-\[50px\] {
-    font-size: 50px;
-  }
 }
 
 @media (min-width: 1280px) {
 
-  .xl\:bottom-\[-60px\] {
-    bottom: -60px;
-  }
-
   .xl\:hidden {
     display: none;
-  }
-
-  .xl\:h-12 {
-    height: 3rem;
   }
 
   .xl\:h-\[345px\] {
@@ -1432,36 +1403,7 @@ textarea {
     height: 550px;
   }
 
-  .xl\:w-44 {
-    width: 11rem;
-  }
-
   .xl\:w-7\/12 {
     width: 58.333333%;
-  }
-
-  .xl\:w-\[450px\] {
-    width: 450px;
-  }
-
-  .xl\:justify-around {
-    justify-content: space-around;
-  }
-
-  .xl\:text-\[24px\] {
-    font-size: 24px;
-  }
-
-  .xl\:text-\[40px\] {
-    font-size: 40px;
-  }
-
-  .xl\:text-\[72px\] {
-    font-size: 72px;
-  }
-
-  .xl\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 }

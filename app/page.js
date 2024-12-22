@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 export default function Home() {
   return (
     <div className='h-screen'>
-      <div className='bgCover h-full w-full -z-10 absolute top-0 left-0'></div>
+      <div className='bg-background h-full w-full -z-10 absolute top-0 left-0'></div>
       <Hero/>
     </div>
   );
