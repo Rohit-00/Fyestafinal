@@ -1,6 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
-import hand from '../public/images/overall hand.png'
+
 import { ContactUs } from './contactUs'
 
 function MainText() {

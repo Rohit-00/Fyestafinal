@@ -9,7 +9,6 @@
 }
 
 .bgCover{
-  background-image: url(../public/images/overlay.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
