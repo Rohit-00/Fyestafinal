@@ -1,10 +1,12 @@
 export const WhoIsItFor = () => {
     return (
-        <section className="flex-col mx-auto px-4 py-20">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12 relative inline-block mx-auto bg-green-400">
+        <section className="flex-col mx-auto px-4">
+          <center>
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12 relative inline-block mx-auto">
           Who is it for?
           <div className="absolute -bottom-2 left-0 w-full h-1 bg-[#FF6B6B] rounded-full"></div>
         </h2>
+        </center>
 
         <div className="grid md:grid-cols-3 gap-8">
           {[
@@ -23,7 +25,7 @@ export const WhoIsItFor = () => {
           ].map((card, index) => (
             <div 
               key={index}
-              className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              className="bg-white p-8 rounded-lg "
             >
               <h3 className="text-xl font-semibold text-gray-800 mb-4">
                 {card.title}
